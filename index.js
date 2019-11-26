@@ -3,6 +3,7 @@ var fs = require('fs')
 
 const myUsername = ''
 const password = ''
+const channelName = ''
 
 const mentioned = require('./mentioned')
 const greet = require('./greet')
@@ -18,7 +19,7 @@ const client = new tmi.Client({
 		username: myUsername,
 		password
 	},
-	channels: [ 'nittmv' ]
+	channels: [ channelName ]
 });
 
 const messages = []
